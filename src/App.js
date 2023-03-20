@@ -40,7 +40,7 @@ function App() {
     <>
       <Router>
         <Navbar
-          title="Text Utility App"
+          title="Home"
           abouttext="ManageText"
           mode={Mode}
           toogleMode={toogleMode}
@@ -48,7 +48,7 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-5">
           <Routes>
-            <Route path={"/about"} exact element={<About />} />
+            <Route path={"/about"} exact element={<About mode={Mode} />} />
             <Route
               path={"/"}
               exact
